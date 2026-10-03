@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Savasaachi Flix BD
 
-## Getting Started
+A Next.js shop for streaming plans, AI tools, gift cards, and software keys in Bangladesh. It follows the catalog and checkout flow of a local OTT store: collections, variants, cart, coupons, bKash / Nagad / Rocket / card, WhatsApp delivery, account, order tracking, guides, and policies.
 
-First, run the development server:
+The interface, copy, and artwork are original. Brand names on products belong to their owners.
+
+## Stack
+
+- Next.js 16.3.8 (the latest 16.3 security release; 16.3.6 was the prior patch)
+- React 19.2
+- Tailwind CSS 4
+- App Router, TypeScript, Turbopack
+
+## Run
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Before you take real payments
 
-## Learn More
+Edit `src/lib/site.ts`:
 
-To learn more about Next.js, take a look at the following resources:
+- phone and WhatsApp
+- bKash, Nagad, and Rocket numbers
+- email, address, and social links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Checkout stores the order in this browser. It does not charge a wallet or a card. Card checkout is a simulated approval and never asks for a card number. Connect SSLCommerz, bKash, or another gateway before launch.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Shop flow
 
-## Deploy on Vercel
+- Coupons: `SAVA10` (10% off), `WELCOME50` (Tk 50 off from Tk 300), `COMBO100` (Tk 100 off when a combo is in the cart)
+- Accounts and orders stay in local storage on the device
+- Track an order at `/track` with the `SFX-` id
+- Press `/` to search
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Catalog
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Product data is in `src/data/products.ts`. Collections are in `src/data/collections.ts`.
