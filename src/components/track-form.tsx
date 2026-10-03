@@ -32,7 +32,7 @@ export function TrackForm() {
         <article className="mt-6 rounded-[1.4rem] border border-line p-5">
           <p className="text-xs tracking-[0.18em] text-gold uppercase">Placed</p>
           <h2 className="mt-1 font-display text-4xl">{order.id}</h2>
-          <p className="mt-2 text-sm text-muted">{new Date(order.createdAt).toLocaleString("en-BD")} · {order.payment} · {taka(order.total)}</p>
+          <p className="mt-2 text-sm text-muted">{new Date(order.createdAt).toLocaleString("en-BD")} · {taka(order.total)}</p>
           <ul className="mt-4 space-y-2 text-sm">
             {order.lines.map((line) => (
               <li key={`${line.slug}-${line.variantId}`}>

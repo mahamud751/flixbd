@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Guides",
-  description: "How to pay with bKash, compare Netflix plans, and tell a gift card from a profile.",
+  description: "How to order on WhatsApp, compare Netflix plans, and tell a gift card from a profile.",
 };
 
 export default function Page() {

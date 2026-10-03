@@ -55,8 +55,6 @@ export type CartLine = {
   qty: number;
 };
 
-export type PaymentMethod = "bkash" | "nagad" | "rocket" | "card";
-
 export type OrderLine = {
   slug: string;
   name: string;
@@ -69,8 +67,8 @@ export type OrderLine = {
 export type Customer = {
   name: string;
   phone: string;
+  address: string;
   email: string;
-  whatsapp: string;
 };
 
 export type Order = {
@@ -78,8 +76,6 @@ export type Order = {
   createdAt: string;
   email: string;
   customer: Customer;
-  payment: PaymentMethod;
-  trxId: string;
   note: string;
   coupon: string | null;
   discount: number;

@@ -13,7 +13,7 @@ export const products: Product[] = [
   "blurb": "A Netflix profile for phone, tablet, laptop, and PC, one screen at a time.",
   "paragraphs": [
     "A Netflix profile for phone, tablet, laptop, and PC, one screen at a time.",
-    "Pay for Netflix Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Netflix Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -64,7 +64,7 @@ export const products: Product[] = [
   "blurb": "Netflix profile access that includes Smart TV, plus mobile, tablet, laptop, and PC.",
   "paragraphs": [
     "Netflix profile access that includes Smart TV, plus mobile, tablet, laptop, and PC.",
-    "Pay for Netflix Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Netflix Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -114,7 +114,7 @@ export const products: Product[] = [
   "blurb": "Netflix and Prime Video together for phone, laptop, and PC.",
   "paragraphs": [
     "Netflix and Prime Video together for phone, laptop, and PC.",
-    "Pay for Netflix + Prime Video with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Netflix + Prime Video here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -145,7 +145,7 @@ export const products: Product[] = [
   "blurb": "Netflix and Prime Video with TV access included.",
   "paragraphs": [
     "Netflix and Prime Video with TV access included.",
-    "Pay for Netflix + Prime Video with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Netflix + Prime Video here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -176,7 +176,7 @@ export const products: Product[] = [
   "blurb": "One month of Netflix and HBO Max, billed as a single combo.",
   "paragraphs": [
     "One month of Netflix and HBO Max, billed as a single combo.",
-    "Pay for Netflix + HBO Max with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Netflix + HBO Max here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -207,7 +207,7 @@ export const products: Product[] = [
   "blurb": "Netflix and Disney+ in one order, with a 1-month or 3-month option.",
   "paragraphs": [
     "Netflix and Disney+ in one order, with a 1-month or 3-month option.",
-    "Pay for Netflix + Disney+ with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Netflix + Disney+ here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -244,7 +244,7 @@ export const products: Product[] = [
   "blurb": "Netflix, Prime Video, and Disney+ packed into one monthly combo.",
   "paragraphs": [
     "Netflix, Prime Video, and Disney+ packed into one monthly combo.",
-    "Pay for Ultimate Combo with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Ultimate Combo here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -275,7 +275,7 @@ export const products: Product[] = [
   "blurb": "Netflix, Prime Video, Disney+, and HBO Max in the fullest monthly bundle.",
   "paragraphs": [
     "Netflix, Prime Video, Disney+, and HBO Max in the fullest monthly bundle.",
-    "Pay for Premium Combo with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Premium Combo here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -306,7 +306,7 @@ export const products: Product[] = [
   "blurb": "Prime Video, Disney+, Hulu, and HBO Max without Netflix.",
   "paragraphs": [
     "Prime Video, Disney+, Hulu, and HBO Max without Netflix.",
-    "Pay for Entertainment Combo with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Entertainment Combo here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -339,7 +339,7 @@ export const products: Product[] = [
   "blurb": "A 3-month Netflix profile plan sold as the elite option.",
   "paragraphs": [
     "A 3-month Netflix profile plan sold as the elite option.",
-    "Pay for Netflix Elite VIP Plan with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Netflix Elite VIP Plan here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -370,7 +370,7 @@ export const products: Product[] = [
   "blurb": "Prime Video for shows and movies, with monthly and longer options.",
   "paragraphs": [
     "Prime Video for shows and movies, with monthly and longer options.",
-    "Pay for Amazon Prime Video with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Amazon Prime Video here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -420,7 +420,7 @@ export const products: Product[] = [
   "blurb": "HBO Max originals, films, and series with 1, 3, or 6 month options.",
   "paragraphs": [
     "HBO Max originals, films, and series with 1, 3, or 6 month options.",
-    "Pay for HBO Max Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order HBO Max Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -464,7 +464,7 @@ export const products: Product[] = [
   "blurb": "Disney+ for films, series, and family titles.",
   "paragraphs": [
     "Disney+ for films, series, and family titles.",
-    "Pay for Disney+ Premium with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Disney+ Premium here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -495,7 +495,7 @@ export const products: Product[] = [
   "blurb": "Hulu access for 1 or 3 months. A VPN is required outside Hulu's regions.",
   "paragraphs": [
     "Hulu access for 1 or 3 months. A VPN is required outside Hulu's regions.",
-    "Pay for Hulu Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Hulu Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -533,7 +533,7 @@ export const products: Product[] = [
   "blurb": "iQIYI VIP for Asian dramas, films, and variety shows.",
   "paragraphs": [
     "iQIYI VIP for Asian dramas, films, and variety shows.",
-    "Pay for iQIYI VIP Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order iQIYI VIP Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -570,7 +570,7 @@ export const products: Product[] = [
   "blurb": "A 12-month Zee5 plan with ads, for Indian shows and films.",
   "paragraphs": [
     "A 12-month Zee5 plan with ads, for Indian shows and films.",
-    "Pay for Zee5 Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Zee5 Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -603,7 +603,7 @@ export const products: Product[] = [
   "blurb": "A 12-month YouTube Premium option. This listing is currently sold out.",
   "paragraphs": [
     "A 12-month YouTube Premium option. This listing is currently sold out.",
-    "Pay for YouTube Premium Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order YouTube Premium Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -634,7 +634,7 @@ export const products: Product[] = [
   "blurb": "SonyLIV Premium for 12 months of shows, films, and sports coverage.",
   "paragraphs": [
     "SonyLIV Premium for 12 months of shows, films, and sports coverage.",
-    "Pay for SonyLIV Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order SonyLIV Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -664,7 +664,7 @@ export const products: Product[] = [
   "blurb": "Ad-free anime, simulcasts, and the back catalog on Crunchyroll.",
   "paragraphs": [
     "Ad-free anime, simulcasts, and the back catalog on Crunchyroll.",
-    "Pay for Crunchyroll Premium with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Crunchyroll Premium here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -702,7 +702,7 @@ export const products: Product[] = [
   "blurb": "ChatGPT Plus for faster replies, priority access, and advanced tools.",
   "paragraphs": [
     "ChatGPT Plus for faster replies, priority access, and advanced tools.",
-    "Pay for ChatGPT Plus with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order ChatGPT Plus here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -740,7 +740,7 @@ export const products: Product[] = [
   "blurb": "Claude Pro on a personal account for a month.",
   "paragraphs": [
     "Claude Pro on a personal account for a month.",
-    "Pay for Claude AI Pro Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Claude AI Pro Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -771,7 +771,7 @@ export const products: Product[] = [
   "blurb": "Gemini Advanced for a month, for longer context and the Pro model.",
   "paragraphs": [
     "Gemini Advanced for a month, for longer context and the Pro model.",
-    "Pay for Gemini Advanced (AI Pro) with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Gemini Advanced (AI Pro) here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -803,7 +803,7 @@ export const products: Product[] = [
   "blurb": "Duolingo Super for 12 months, without ads and with extra practice.",
   "paragraphs": [
     "Duolingo Super for 12 months, without ads and with extra practice.",
-    "Pay for Duolingo Super Premium with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Duolingo Super Premium here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -834,7 +834,7 @@ export const products: Product[] = [
   "blurb": "QuillBot Premium for paraphrasing, with plans from 1 month to a year.",
   "paragraphs": [
     "QuillBot Premium for paraphrasing, with plans from 1 month to a year.",
-    "Pay for QuillBot Premium with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order QuillBot Premium here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -883,7 +883,7 @@ export const products: Product[] = [
   "blurb": "Perplexity Pro for 12 months. This listing is currently sold out.",
   "paragraphs": [
     "Perplexity Pro for 12 months. This listing is currently sold out.",
-    "Pay for Perplexity AI Premium with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Perplexity AI Premium here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -914,7 +914,7 @@ export const products: Product[] = [
   "blurb": "Super Grok for a month of higher Grok usage.",
   "paragraphs": [
     "Super Grok for a month of higher Grok usage.",
-    "Pay for Super Grok (Monthly) with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Super Grok (Monthly) here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -945,7 +945,7 @@ export const products: Product[] = [
   "blurb": "Ideogram Plus for a month of text-to-image generation.",
   "paragraphs": [
     "Ideogram Plus for a month of text-to-image generation.",
-    "Pay for Ideogram AI Plus with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Ideogram AI Plus here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -976,7 +976,7 @@ export const products: Product[] = [
   "blurb": "Lovable Pro for 12 months, including 300 credits.",
   "paragraphs": [
     "Lovable Pro for 12 months, including 300 credits.",
-    "Pay for Lovable Pro with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Lovable Pro here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1006,7 +1006,7 @@ export const products: Product[] = [
   "blurb": "Bolt Pro for AI app building.",
   "paragraphs": [
     "Bolt Pro for AI app building.",
-    "Pay for Bolt Pro Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Bolt Pro Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1036,7 +1036,7 @@ export const products: Product[] = [
   "blurb": "Gamma Pro for AI presentations and documents.",
   "paragraphs": [
     "Gamma Pro for AI presentations and documents.",
-    "Pay for Gamma Pro Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Gamma Pro Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1067,7 +1067,7 @@ export const products: Product[] = [
   "blurb": "Replit Core for cloud coding with higher limits.",
   "paragraphs": [
     "Replit Core for cloud coding with higher limits.",
-    "Pay for Replit Core Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Replit Core Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1098,7 +1098,7 @@ export const products: Product[] = [
   "blurb": "An n8n plan for workflow automation.",
   "paragraphs": [
     "An n8n plan for workflow automation.",
-    "Pay for n8n Automation Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order n8n Automation Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1129,7 +1129,7 @@ export const products: Product[] = [
   "blurb": "Apple Gift Card amounts from $2 to $200, redeemed on an Apple Account.",
   "paragraphs": [
     "Apple Gift Card amounts from $2 to $200, redeemed on an Apple Account.",
-    "Pay for Apple iTunes Gift Card with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Apple iTunes Gift Card here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1216,7 +1216,7 @@ export const products: Product[] = [
   "blurb": "iCloud+ storage upgrades from 50 GB to 2 TB.",
   "paragraphs": [
     "iCloud+ storage upgrades from 50 GB to 2 TB.",
-    "Pay for Apple iCloud+ Storage with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Apple iCloud+ Storage here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1278,7 +1278,7 @@ export const products: Product[] = [
   "blurb": "Microsoft 365 Personal for 12 months, for Word, Excel, PowerPoint, and Outlook.",
   "paragraphs": [
     "Microsoft 365 Personal for 12 months, for Word, Excel, PowerPoint, and Outlook.",
-    "Pay for Microsoft 365 with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Microsoft 365 here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1311,7 +1311,7 @@ export const products: Product[] = [
   "blurb": "Creative Cloud team-plan access for a month. Currently sold out.",
   "paragraphs": [
     "Creative Cloud team-plan access for a month. Currently sold out.",
-    "Pay for Adobe Creative Cloud with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Adobe Creative Cloud here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1342,7 +1342,7 @@ export const products: Product[] = [
   "blurb": "A Windows 10 Pro or Windows 11 Pro retail key.",
   "paragraphs": [
     "A Windows 10 Pro or Windows 11 Pro retail key.",
-    "Pay for Windows Pro Retail Key with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Windows Pro Retail Key here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1380,7 +1380,7 @@ export const products: Product[] = [
   "blurb": "An IDM lifetime license key for the official Internet Download Manager app.",
   "paragraphs": [
     "An IDM lifetime license key for the official Internet Download Manager app.",
-    "Pay for Internet Download Manager Lifetime with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Internet Download Manager Lifetime here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1412,7 +1412,7 @@ export const products: Product[] = [
   "blurb": "Google One family invitations for 100 GB or 200 GB. Currently sold out.",
   "paragraphs": [
     "Google One family invitations for 100 GB or 200 GB. Currently sold out.",
-    "Pay for Google One Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Google One Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1449,7 +1449,7 @@ export const products: Product[] = [
   "blurb": "Apple One for new users on a USA Apple Account. Currently sold out.",
   "paragraphs": [
     "Apple One for new users on a USA Apple Account. Currently sold out.",
-    "Pay for Apple One Subscription with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Apple One Subscription here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1482,7 +1482,7 @@ export const products: Product[] = [
   "blurb": "Apple Music codes for 2 or 3 months. Currently sold out.",
   "paragraphs": [
     "Apple Music codes for 2 or 3 months. Currently sold out.",
-    "Pay for Apple Music Premium with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Apple Music Premium here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1531,7 +1531,7 @@ export const products: Product[] = [
   "blurb": "Apple TV+ for a month. Currently sold out.",
   "paragraphs": [
     "Apple TV+ for a month. Currently sold out.",
-    "Pay for Apple TV+ with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Apple TV+ here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1561,7 +1561,7 @@ export const products: Product[] = [
   "blurb": "Spotify Premium for 12 months. Currently sold out.",
   "paragraphs": [
     "Spotify Premium for 12 months. Currently sold out.",
-    "Pay for Spotify Premium with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Spotify Premium here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1591,7 +1591,7 @@ export const products: Product[] = [
   "blurb": "CapCut Pro on a private account for one month.",
   "paragraphs": [
     "CapCut Pro on a private account for one month.",
-    "Pay for CapCut Pro with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order CapCut Pro here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1621,7 +1621,7 @@ export const products: Product[] = [
   "blurb": "LinkedIn Premium plans for career, business, and sales.",
   "paragraphs": [
     "LinkedIn Premium plans for career, business, and sales.",
-    "Pay for LinkedIn Premium with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order LinkedIn Premium here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1669,7 +1669,7 @@ export const products: Product[] = [
   "blurb": "Tinder Gold for 12 months.",
   "paragraphs": [
     "Tinder Gold for 12 months.",
-    "Pay for Tinder Gold with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Tinder Gold here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1700,7 +1700,7 @@ export const products: Product[] = [
   "blurb": "ExpressVPN for 12 months, with a mobile option and a PC or Mac option.",
   "paragraphs": [
     "ExpressVPN for 12 months, with a mobile option and a PC or Mac option.",
-    "Pay for ExpressVPN with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order ExpressVPN here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1737,7 +1737,7 @@ export const products: Product[] = [
   "blurb": "Surfshark VPN for 2, 6, or 12 months.",
   "paragraphs": [
     "Surfshark VPN for 2, 6, or 12 months.",
-    "Pay for Surfshark VPN with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Surfshark VPN here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1780,7 +1780,7 @@ export const products: Product[] = [
   "blurb": "PSN wallet codes in $25, $50, and $100.",
   "paragraphs": [
     "PSN wallet codes in $25, $50, and $100.",
-    "Pay for PlayStation Gift Cards with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order PlayStation Gift Cards here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1824,7 +1824,7 @@ export const products: Product[] = [
   "blurb": "Steam Wallet codes from $10 to $100.",
   "paragraphs": [
     "Steam Wallet codes from $10 to $100.",
-    "Pay for Steam Wallet Gift Card with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Steam Wallet Gift Card here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1879,7 +1879,7 @@ export const products: Product[] = [
   "blurb": "PUBG Mobile UC top-up. This listing is currently unavailable.",
   "paragraphs": [
     "PUBG Mobile UC top-up. This listing is currently unavailable.",
-    "Pay for PUBG Mobile UC with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order PUBG Mobile UC here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1910,7 +1910,7 @@ export const products: Product[] = [
   "blurb": "Roblox credit. This listing is currently unavailable.",
   "paragraphs": [
     "Roblox credit. This listing is currently unavailable.",
-    "Pay for Roblox Gift Card with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Roblox Gift Card here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1941,7 +1941,7 @@ export const products: Product[] = [
   "blurb": "Razer Gold wallet credit. This listing is currently unavailable.",
   "paragraphs": [
     "Razer Gold wallet credit. This listing is currently unavailable.",
-    "Pay for Razer Gold Wallet with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Razer Gold Wallet here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [
@@ -1972,7 +1972,7 @@ export const products: Product[] = [
   "blurb": "Valorant points. This listing is currently unavailable.",
   "paragraphs": [
     "Valorant points. This listing is currently unavailable.",
-    "Pay for Valorant Gift Card with bKash, Nagad, Rocket, or a card. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
+    "Order Valorant Gift Card here and send the order on WhatsApp. After the order is confirmed, activation details are sent on WhatsApp during support hours — usually within 30 minutes, and within 4 hours.",
     "Read the option name before you pay. Some options are a profile our team delivers. Others are a redeem code or license key for an account you already own."
   ],
   "features": [

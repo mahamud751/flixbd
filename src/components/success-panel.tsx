@@ -1,8 +1,8 @@
 "use client";
 
 import { useShop } from "@/context/shop";
-import { taka } from "@/lib/commerce";
-import { site, whatsappHref } from "@/lib/site";
+import { orderWhatsappText, taka } from "@/lib/commerce";
+import { whatsappHref } from "@/lib/site";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
@@ -23,14 +23,14 @@ export function SuccessPanel() {
     );
   }
 
-  const text = `Hi ${site.name}, I placed order ${order.id}. Name: ${order.customer.name}. Phone: ${order.customer.phone}. Please deliver on this WhatsApp.`;
+  const text = orderWhatsappText(order);
 
   return (
     <div className="max-w-2xl">
       <p className="text-xs tracking-[0.2em] text-gold uppercase">Order placed</p>
       <h1 className="mt-2 font-display text-6xl leading-none">{order.id}</h1>
       <p className="mt-4 text-muted">
-        {taka(order.total)} via {order.payment}. Delivery details go to WhatsApp {order.customer.whatsapp} during support hours, usually within 30 minutes and within 4 hours.
+        Total {taka(order.total)}. If WhatsApp didn&apos;t open, tap the button below and press send — we confirm the order and share details on {order.customer.phone}.
       </p>
       <ul className="mt-6 space-y-2 text-sm">
         {order.lines.map((line) => (

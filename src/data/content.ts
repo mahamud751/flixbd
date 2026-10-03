@@ -15,10 +15,10 @@ export const faqs: Faq[] = [
       "অর্ডার সম্পন্ন হওয়ার পর আপনার সাবস্ক্রিপশন WhatsApp-এর মাধ্যমে ডেলিভারি করা হবে। সাধারণত ৩০ মিনিট থেকে ৪ ঘণ্টার মধ্যে ডেলিভারি সম্পন্ন হয়। দ্রুত ডেলিভারির জন্য অর্ডারের পর WhatsApp সাপোর্টে যোগাযোগ করুন।",
   },
   {
-    question: "Which payment methods can I use?",
-    questionBn: "পেমেন্ট কোন মাধ্যমে করা যায়?",
-    answer: "bKash, Nagad, Rocket, Visa, and Mastercard. Pick the method at checkout and keep your transaction ID.",
-    answerBn: "bKash, Nagad, Rocket, Visa, এবং Mastercard। চেকআউটে মাধ্যম বেছে ট্রানজ্যাকশন আইডি রাখুন।",
+    question: "How do I place an order?",
+    questionBn: "কিভাবে অর্ডার করবো?",
+    answer: "Add products to the cart, enter your name, phone, and address at checkout, and press Place order. WhatsApp opens with your full order — press send and we confirm it there.",
+    answerBn: "পণ্য কার্টে যোগ করুন, চেকআউটে নাম, ফোন ও ঠিকানা দিন, তারপর Place order চাপুন। আপনার পুরো অর্ডারসহ WhatsApp খুলবে — সেন্ড করুন, আমরা সেখানেই কনফার্ম করবো।",
   },
   {
     question: "What if the subscription does not work?",
@@ -44,7 +44,7 @@ export const faqs: Faq[] = [
   {
     question: "Do you ship outside Bangladesh?",
     answer:
-      "Delivery is digital, on WhatsApp. Payment instructions on this shop are for Bangladesh wallets and cards. The product itself may be a regional code, which is written on the product page.",
+      "Delivery is digital, on WhatsApp. Orders are confirmed in the WhatsApp chat. The product itself may be a regional code, which is written on the product page.",
   },
 ];
 
@@ -60,16 +60,16 @@ export type Post = {
 
 export const posts: Post[] = [
   {
-    slug: "buy-streaming-with-bkash",
-    title: "How to buy a streaming plan with bKash",
+    slug: "how-to-order-on-whatsapp",
+    title: "How to order a streaming plan on WhatsApp",
     date: "2026-09-18",
-    excerpt: "Pick the device type, pay from your bKash app, and send the transaction ID so delivery can start.",
+    excerpt: "Pick the device type, fill in your details, and send the order on WhatsApp so delivery can start.",
     author: "Savasaachi Desk",
     minutes: 4,
     body: [
       "A streaming order has three choices that change the price: which apps you want, which screens you will use, and how many days you need. Mobile and laptop plans are cheaper than plans that include a TV.",
-      "Open the product, choose the duration, and add it to the cart. At checkout, select bKash and send the exact total to the bKash number shown on the page. The transaction ID is the proof of payment. Paste it into the order.",
-      "Keep WhatsApp available on the same number you enter. That is where the profile or code arrives. If the amount or the transaction ID does not match, support will ask you to confirm before anything is delivered.",
+      "Open the product, choose the duration, and add it to the cart. At checkout, enter your name, phone number, and address, then press Place order. WhatsApp opens with the whole order already written — press send.",
+      "Keep WhatsApp available on the same number you enter. That is where the profile or code arrives. Support confirms the order and the total in that chat before anything is delivered.",
       "Combo plans follow the same steps. The cart can hold a combo and a gift card together, and coupon SAVA10 takes 10 percent off the subtotal after you apply it.",
     ],
   },
@@ -110,7 +110,7 @@ export const posts: Post[] = [
     minutes: 4,
     body: [
       "ChatGPT Plus is listed at Tk 400 for a month. Claude Pro is a personal-account month at Tk 3,300. Gemini Advanced is Tk 899 for a month. Super Grok is Tk 4,000 for a month. QuillBot starts at Tk 300.",
-      "The same checkout covers them: cart, coupon, bKash or another wallet, then WhatsApp. A personal-account option needs an email you can log into. Send that email only in the WhatsApp chat after the order exists, not in a public review.",
+      "The same checkout covers them: cart, coupon, your details, then WhatsApp. A personal-account option needs an email you can log into. Send that email only in the WhatsApp chat after the order exists, not in a public review.",
       "Perplexity and a few other rows are in the catalog but sold out. The product page shows that state, and Add to cart stays off until a variant is available.",
       "AI access is a subscription to someone else's service. Savasaachi Flix BD is the seller of the plan, not the maker of the model.",
     ],
@@ -134,14 +134,14 @@ export const policies: Policy[] = [
         heading: "Digital delivery",
         paragraphs: [
           "Every product in this shop is digital. Nothing is shipped by courier. Delivery means a WhatsApp message with a profile, a redeem code, or a license key.",
-          "During support hours, 11:00 AM to 11:30 PM Bangladesh time, delivery is usually within 30 minutes and within 4 hours of a confirmed payment.",
+          "During support hours, 11:00 AM to 11:30 PM Bangladesh time, delivery is usually within 30 minutes and within 4 hours of a confirmed order.",
         ],
       },
       {
         heading: "What we need from you",
         paragraphs: [
-          "Checkout collects your name, a phone number, an email, and a transaction ID for wallet payments. If a product must be activated on your own email, support will ask for that email after the order is placed.",
-          "Orders with a missing or mismatched transaction ID wait until the payment can be matched.",
+          "Checkout collects your name, phone number, address, and an optional email. If a product must be activated on your own email, support will ask for that email after the order is placed.",
+          "An order starts once you send it on WhatsApp and support confirms it in the chat.",
         ],
       },
       {
@@ -160,7 +160,7 @@ export const policies: Policy[] = [
       {
         heading: "Before delivery",
         paragraphs: [
-          "If an order has not been delivered, you can cancel it. Message support with the order ID. Wallet payments are returned to the same wallet after the payment is confirmed as ours.",
+          "If an order has not been delivered, you can cancel it. Message support with the order ID. Anything you already paid is returned the same way you paid it.",
         ],
       },
       {
@@ -188,8 +188,8 @@ export const policies: Policy[] = [
       {
         heading: "What this shop stores",
         paragraphs: [
-          "Checkout asks for your name, phone, email, WhatsApp number, payment method, and transaction ID. In this project those details stay in your browser so the order flow can be reviewed. A production launch should move orders to a private server and a real payment gateway.",
-          "Do not send passwords for your bank, bKash PIN, or card number. The card option on checkout is a simulated approval and does not ask for a card number.",
+          "Checkout asks for your name, phone, address, and an optional email. Those details are saved in your browser and sent to us only when you press send in WhatsApp.",
+          "Never send passwords, PINs, or card numbers in chat. Support will never ask for them.",
         ],
       },
       {
@@ -258,10 +258,10 @@ export const heroSlides = [
     cta: "Browse combos",
   },
   {
-    kicker: "bKash · Nagad · Rocket · Card",
-    title: "Easy and secure payments",
+    kicker: "Order on WhatsApp",
+    title: "Cart to WhatsApp in one tap",
     emphasis: "secure",
-    lede: "Send the total, paste the transaction ID, and keep the order number. Digital delivery is free.",
+    lede: "Fill your cart, add your name, phone, and address, and your full order opens in WhatsApp. Digital delivery is free.",
     href: "/checkout",
     cta: "Go to checkout",
   },
@@ -281,7 +281,7 @@ export const sampleReviews = [
     product: "Apple iTunes Gift Card",
     slug: "apple-itunes-giftcard-price-in-bangladesh",
     quote:
-      "The $25 code redeemed on my own Apple Account the same evening. The transaction ID step made the payment easy to match.",
+      "The $25 code redeemed on my own Apple Account the same evening. Ordering over WhatsApp was quick and easy.",
   },
   {
     name: "Tanvir Ahmed",

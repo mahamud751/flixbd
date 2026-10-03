@@ -1,9 +1,30 @@
 import { collections, getCollection } from "@/data/collections";
 import { products } from "@/data/products";
-import type { CartLine, Product, Variant } from "@/lib/types";
+import type { CartLine, Order, Product, Variant } from "@/lib/types";
 
 export function taka(amount: number) {
   return `Tk ${amount.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+}
+
+export function orderWhatsappText(order: Order) {
+  const lines = order.lines.map(
+    (line, index) => `${index + 1}. ${line.name} (${line.variantName}) × ${line.qty} = ${taka(line.price * line.qty)}`,
+  );
+  return [
+    `New order ${order.id}`,
+    "",
+    ...lines,
+    "",
+    `Subtotal: ${taka(order.subtotal)}`,
+    ...(order.discount > 0 ? [`Discount${order.coupon ? ` (${order.coupon})` : ""}: -${taka(order.discount)}`] : []),
+    `Total: ${taka(order.total)}`,
+    "",
+    `Name: ${order.customer.name}`,
+    `Phone: ${order.customer.phone}`,
+    `Address: ${order.customer.address}`,
+    ...(order.customer.email ? [`Email: ${order.customer.email}`] : []),
+    ...(order.note ? [`Note: ${order.note}`] : []),
+  ].join("\n");
 }
 
 export function getProduct(slug: string) {

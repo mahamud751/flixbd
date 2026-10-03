@@ -10,7 +10,6 @@ import type {
   CartLine,
   Customer,
   Order,
-  PaymentMethod,
   Session,
   StoredUser,
 } from "@/lib/types";
@@ -64,7 +63,7 @@ type ShopContextValue = {
   register: (input: { name: string; email: string; phone: string; password: string }) => Promise<string | null>;
   login: (email: string, password: string) => Promise<string | null>;
   logout: () => void;
-  placeOrder: (input: { customer: Customer; payment: PaymentMethod; trxId: string }) => Order | string;
+  placeOrder: (input: { customer: Customer }) => Order | string;
   findOrder: (id: string) => Order | undefined;
   toasts: Toast[];
   pushToast: (message: string) => void;
@@ -262,7 +261,7 @@ export function ShopProvider({ children }: { children: React.ReactNode }) {
   }, [update]);
 
   const placeOrder = useCallback(
-    (input: { customer: Customer; payment: PaymentMethod; trxId: string }) => {
+    (input: { customer: Customer }) => {
       if (resolved.length === 0) return "Your cart is empty.";
       const blocked = resolved.find((line) => !line.variant.available || line.variant.price <= 0);
       if (blocked) return `${blocked.product.name} is sold out. Remove it to continue.`;
@@ -271,8 +270,6 @@ export function ShopProvider({ children }: { children: React.ReactNode }) {
         createdAt: new Date().toISOString(),
         email: input.customer.email.trim().toLowerCase(),
         customer: input.customer,
-        payment: input.payment,
-        trxId: input.trxId.trim(),
         note: persisted.note,
         coupon: couponResult?.ok ? couponResult.code : null,
         discount,

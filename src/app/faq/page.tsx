@@ -3,7 +3,7 @@ import { PageIntro, Shell } from "@/components/page-intro";
 import { faqs } from "@/data/content";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "FAQ", description: "Delivery, payment, refunds, and what a profile is." };
+export const metadata: Metadata = { title: "FAQ", description: "Ordering, delivery, refunds, and what a profile is." };
 
 export default function Page() {
   return (

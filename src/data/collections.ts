@@ -41,7 +41,7 @@ export const collections: Collection[] = [
     handle: "gift-cards",
     title: "Digital gift cards",
     lede: "Apple, PlayStation, and Steam codes, redeemed on an account you own.",
-    blurb: "Codes are revealed after payment.",
+    blurb: "Codes are sent after your order is confirmed.",
   },
   {
     handle: "gaming",

@@ -18,7 +18,7 @@ const nav = [
 ] as const;
 
 const marquee =
-  "Instant delivery on Netflix, Prime, Disney+, HBO & ChatGPT — your account arrives within seconds of payment.";
+  "Instant delivery on Netflix, Prime, Disney+, HBO & ChatGPT — order in one tap on WhatsApp.";
 
 export function SiteFrame({ children }: { children: React.ReactNode }) {
   return (
@@ -308,11 +308,6 @@ function Footer() {
             <li><a className="hover:text-white" href={whatsappHref("Hi, I need help with an order.")}>WhatsApp {site.phoneDisplay}</a></li>
             <li><a className="hover:text-white" href={`mailto:${site.email}`}>{site.email}</a></li>
             <li><Link className="hover:text-white" href="/track">Track an order</Link></li>
-          </ul>
-          <ul className="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-ink">
-            {["bKash", "Nagad", "Rocket", "Visa", "Mastercard"].map((method) => (
-              <li key={method} className="rounded bg-white px-2 py-1">{method}</li>
-            ))}
           </ul>
         </div>
       </div>

@@ -13,11 +13,11 @@ export default function Page() {
       <PageIntro
         eyebrow="Company"
         title="Savasaachi Flix BD"
-        lede="A digital shop for streaming plans, AI tools, gift cards, and software keys, paid with Bangladesh wallets."
+        lede="A digital shop for streaming plans, AI tools, gift cards, and software keys, ordered on WhatsApp."
       />
       <div className="max-w-3xl space-y-4 leading-7 text-muted">
         <p>
-          Orders are placed on the site, paid with bKash, Nagad, Rocket, or card, and delivered on WhatsApp. The product page says whether you receive a profile, a redeem code, or a license key.
+          Orders are placed on the site, sent to us on WhatsApp, and delivered there. The product page says whether you receive a profile, a redeem code, or a license key.
         </p>
         <p>
           {site.name} is not Netflix, Amazon, Disney, Warner Bros., Apple, Microsoft, or any other brand listed in the catalog. Those names are used so you can tell the services apart.
@@ -26,7 +26,7 @@ export default function Page() {
           Shop address: {site.address}. Support: {site.hours}, {site.hoursNote}. Email {site.email}. Phone {site.phoneDisplay}.
         </p>
         <p>
-          Before you take real payments, replace the phone, wallet numbers, address, and social links in <span className="text-ink">src/lib/site.ts</span>, and connect a payment gateway. This build records checkout in the browser so the full flow can be reviewed.
+          Before launch, replace the WhatsApp number, address, and social links in <span className="text-ink">src/lib/site.ts</span>. Orders arrive on that WhatsApp number.
         </p>
       </div>
     </Shell>

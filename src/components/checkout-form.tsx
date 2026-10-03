@@ -1,20 +1,11 @@
 "use client";
 
 import { useShop } from "@/context/shop";
-import { taka } from "@/lib/commerce";
-import { cx } from "@/lib/cx";
-import { site } from "@/lib/site";
-import type { PaymentMethod } from "@/lib/types";
+import { orderWhatsappText, taka } from "@/lib/commerce";
+import { whatsappHref } from "@/lib/site";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-
-const methods: { id: PaymentMethod; label: string; hint: string }[] = [
-  { id: "bkash", label: "bKash", hint: `Send money to ${site.wallets.bkash}` },
-  { id: "nagad", label: "Nagad", hint: `Send money to ${site.wallets.nagad}` },
-  { id: "rocket", label: "Rocket", hint: `Send money to ${site.wallets.rocket}` },
-  { id: "card", label: "Visa / Mastercard", hint: "Simulated approval. No card number is collected." },
-];
 
 function validPhone(value: string) {
   return /^(?:\+?88)?01[3-9]\d{8}$/.test(value.replace(/[\s-]/g, ""));
@@ -27,15 +18,13 @@ function validEmail(value: string) {
 export function CheckoutForm() {
   const shop = useShop();
   const router = useRouter();
-  const [payment, setPayment] = useState<PaymentMethod>("bkash");
   const [error, setError] = useState<string | null>(null);
-  const [overrides, setOverrides] = useState<{ name?: string; phone?: string; email?: string; whatsapp?: string }>({});
-  const [trxId, setTrxId] = useState("");
+  const [overrides, setOverrides] = useState<{ name?: string; phone?: string; address?: string; email?: string }>({});
   const customer = {
     name: overrides.name ?? shop.session?.name ?? "",
     phone: overrides.phone ?? shop.session?.phone ?? "",
+    address: overrides.address ?? "",
     email: overrides.email ?? shop.session?.email ?? "",
-    whatsapp: overrides.whatsapp ?? shop.session?.phone ?? "",
   };
 
   if (!shop.ready) return <p className="text-muted">Loading your cart…</p>;
@@ -52,59 +41,57 @@ export function CheckoutForm() {
 
   function submit(event: React.FormEvent) {
     event.preventDefault();
-    if (customer.name.trim().length < 2) return setError("Enter the name for this order.");
-    if (!validPhone(customer.phone)) return setError("Enter a Bangladesh mobile number.");
-    if (!validEmail(customer.email)) return setError("Enter a valid email.");
-    if (customer.whatsapp && !validPhone(customer.whatsapp)) return setError("WhatsApp number should be a Bangladesh mobile number.");
-    if (payment !== "card" && trxId.trim().length < 4) return setError("Paste the transaction ID from your wallet app.");
+    if (customer.name.trim().length < 2) return setError("Enter your name.");
+    if (!validPhone(customer.phone)) return setError("Enter a Bangladesh mobile number, like 01XXXXXXXXX.");
+    if (customer.address.trim().length < 4) return setError("Enter your address.");
+    if (customer.email.trim() && !validEmail(customer.email.trim())) return setError("Enter a valid email, or leave it blank.");
     const result = shop.placeOrder({
       customer: {
-        ...customer,
-        whatsapp: customer.whatsapp || customer.phone,
+        name: customer.name.trim(),
+        phone: customer.phone.trim(),
+        address: customer.address.trim(),
+        email: customer.email.trim(),
       },
-      payment,
-      trxId: payment === "card" ? "CARD-SIMULATED" : trxId,
     });
     if (typeof result === "string") {
       setError(result);
       return;
     }
+    window.open(whatsappHref(orderWhatsappText(result)), "_blank", "noopener");
     router.push(`/checkout/success?order=${result.id}`);
   }
 
   return (
     <form onSubmit={submit} className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
       <div className="space-y-4">
-        <Field label="Full name" value={customer.name} onChange={(name) => setOverrides({ ...overrides, name })} />
-        <Field label="Mobile number" value={customer.phone} onChange={(phone) => setOverrides({ ...overrides, phone })} placeholder="01XXXXXXXXX" />
-        <Field label="Email" value={customer.email} onChange={(email) => setOverrides({ ...overrides, email })} type="email" />
-        <Field label="WhatsApp number" value={customer.whatsapp} onChange={(whatsapp) => setOverrides({ ...overrides, whatsapp })} placeholder="Same as mobile if blank" />
-        <fieldset>
-          <legend className="text-sm text-muted">Payment</legend>
-          <div className="mt-2 grid gap-2 sm:grid-cols-2">
-            {methods.map((method) => (
-              <label key={method.id} className={cx("cursor-pointer rounded-2xl border p-4", payment === method.id ? "border-gold bg-gold/10" : "border-line")}>
-                <input className="sr-only" type="radio" name="payment" checked={payment === method.id} onChange={() => setPayment(method.id)} />
-                <span className="block font-semibold">{method.label}</span>
-                <span className="mt-1 block text-sm text-muted">{method.hint}</span>
-              </label>
-            ))}
-          </div>
-        </fieldset>
-        {payment !== "card" ? (
-          <Field label="Transaction ID" value={trxId} onChange={setTrxId} placeholder="From the wallet SMS or app" />
-        ) : (
-          <p className="rounded-2xl border border-line px-4 py-3 text-sm text-muted">
-            Card payment is simulated in this project. Placing the order does not charge a card. Connect SSLCommerz or another gateway before you take real card payments.
-          </p>
-        )}
-        {shop.note ? <p className="text-sm text-muted">Order note: {shop.note}</p> : null}
+        <Field label="Full name" value={customer.name} onChange={(name) => setOverrides({ ...overrides, name })} autoComplete="name" />
+        <Field label="Phone number" value={customer.phone} onChange={(phone) => setOverrides({ ...overrides, phone })} placeholder="01XXXXXXXXX" type="tel" autoComplete="tel" />
+        <label className="block text-sm">
+          <span className="mb-1.5 block text-muted">Address</span>
+          <textarea
+            value={customer.address}
+            rows={3}
+            autoComplete="street-address"
+            placeholder="House, road, area, city"
+            onChange={(event) => setOverrides({ ...overrides, address: event.target.value })}
+            className="w-full rounded-2xl border border-line bg-black/[0.04] px-4 py-3 outline-none focus:border-gold"
+          />
+        </label>
+        <Field label="Email (optional)" value={customer.email} onChange={(email) => setOverrides({ ...overrides, email })} type="email" autoComplete="email" />
+        <label className="block text-sm">
+          <span className="mb-1.5 block text-muted">Order note (optional)</span>
+          <input
+            value={shop.note}
+            onChange={(event) => shop.setNote(event.target.value)}
+            className="w-full rounded-2xl border border-line bg-black/[0.04] px-4 py-3 outline-none focus:border-gold"
+          />
+        </label>
         {error ? <p className="text-sm text-ember">{error}</p> : null}
-        <button type="submit" className="rounded-full bg-ember text-white px-6 py-3 text-sm font-semibold">
-          Place order · {taka(shop.total)}
+        <button type="submit" className="w-full rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-[#06210f] sm:w-auto">
+          Place order on WhatsApp · {taka(shop.total)}
         </button>
         <p className="text-xs leading-5 text-muted">
-          Wallet orders are recorded in this browser together with the transaction ID you paste. Replace the wallet numbers in site settings before accepting real payments.
+          WhatsApp opens with your cart and details filled in. Press send there to confirm the order.
         </p>
       </div>
       <aside className="h-fit rounded-[1.4rem] border border-line bg-panel p-5">
@@ -140,12 +127,14 @@ function Field({
   onChange,
   type = "text",
   placeholder,
+  autoComplete,
 }: {
   label: string;
   value: string;
   onChange: (value: string) => void;
   type?: string;
   placeholder?: string;
+  autoComplete?: string;
 }) {
   return (
     <label className="block text-sm">
@@ -154,6 +143,7 @@ function Field({
         type={type}
         value={value}
         placeholder={placeholder}
+        autoComplete={autoComplete}
         onChange={(event) => onChange(event.target.value)}
         className="w-full rounded-2xl border border-line bg-black/[0.04] px-4 py-3 outline-none focus:border-gold"
       />

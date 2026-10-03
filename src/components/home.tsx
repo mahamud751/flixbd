@@ -77,18 +77,18 @@ export function HomePage() {
 
       <section className="bg-ink text-white">
         <div className="relative mx-auto aspect-[21/8] max-w-[1400px]">
-          <Image src="/banners/payments.jpg" alt="Pay with bKash, Nagad, Visa, and Mastercard" fill className="object-cover" sizes="100vw" />
+          <Image src="/banners/payments.jpg" alt="" fill className="object-cover" sizes="100vw" />
         </div>
         <div className="mx-auto grid max-w-[1100px] gap-8 px-4 py-12 sm:px-6 md:grid-cols-[1.1fr_0.9fr] md:items-center">
           <div>
-            <p className="text-sm font-semibold text-white/80">Easy &amp; Secure Payments</p>
-            <h2 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">Use bKash, Nagad, cards and 25+ payment methods for instant checkout.</h2>
+            <p className="text-sm font-semibold text-white/80">Easy WhatsApp ordering</p>
+            <h2 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">Add to cart, enter your details, and send the full order on WhatsApp.</h2>
             <Link href="/collections/netflix" className="mt-6 inline-block rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink">
               Shop now
             </Link>
           </div>
           <ul className="grid grid-cols-2 gap-3 text-sm">
-            {["Premium Support", "Fast Delivery", "Reliable Digital Products", "Secure Payments"].map((item) => (
+            {["Premium Support", "Fast Delivery", "Reliable Digital Products", "Order on WhatsApp"].map((item) => (
               <li key={item} className="rounded-2xl border border-white/15 px-4 py-6 text-lg font-semibold leading-tight">
                 {item}
               </li>
@@ -119,7 +119,7 @@ export function HomePage() {
       <section className="mx-auto grid max-w-[1240px] gap-8 px-4 pb-8 sm:px-6 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
           <h2 className="text-4xl font-bold"><em className="text-gold">We&apos;re answerable!</em></h2>
-          <p className="mt-3 text-muted">Secure digital payments and instant access to your favorite premium services. Need help? Contact us anytime.</p>
+          <p className="mt-3 text-muted">Easy WhatsApp ordering and instant access to your favorite premium services. Need help? Contact us anytime.</p>
           <a href={whatsappHref("Hi, I have a question before I order.")} className="mt-5 inline-block rounded-full bg-ember px-5 py-3 text-sm font-semibold text-white">
             WhatsApp
           </a>

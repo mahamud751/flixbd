@@ -53,7 +53,7 @@ export function AccountPanel({ mode }: { mode: "login" | "register" | "account" 
                     <Link href={`/checkout/success?order=${order.id}`} className="font-semibold">{order.id}</Link>
                     <span className="text-sm">{taka(order.total)}</span>
                   </div>
-                  <p className="mt-1 text-xs text-muted">{new Date(order.createdAt).toLocaleString("en-BD")} · {order.payment} · placed</p>
+                  <p className="mt-1 text-xs text-muted">{new Date(order.createdAt).toLocaleString("en-BD")} · {taka(order.total)} · placed</p>
                   <p className="mt-2 text-sm text-muted">{order.lines.map((line) => `${line.name} (${line.variantName})`).join(", ")}</p>
                 </li>
               ))}
