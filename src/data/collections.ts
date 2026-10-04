@@ -5,7 +5,7 @@ export const collections: Collection[] = [
     handle: "all",
     title: "All products",
     lede: "Every streaming plan, combo, AI tool, gift card, and software key in the shop.",
-    blurb: "The full Savasaachi Flix BD catalog.",
+    blurb: "The full StreamNest BD catalog.",
   },
   {
     handle: "streaming",

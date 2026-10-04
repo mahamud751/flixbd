@@ -14,7 +14,6 @@ export default function Page() {
           <ul className="space-y-2 text-sm text-muted">
             <li>WhatsApp {site.phoneDisplay}</li>
             <li>Email {site.email}</li>
-            <li>Orders {site.orderEmail}</li>
             <li>{site.address}</li>
           </ul>
           <a href={whatsappHref("Hi, I need help with an order.")} className="mt-5 inline-block rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-[#06210f]">

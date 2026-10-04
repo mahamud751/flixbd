@@ -6,6 +6,7 @@ import { ShopProvider, useShop } from "@/context/shop";
 import { popularSearches, priceLabel, searchProducts } from "@/lib/commerce";
 import { cx } from "@/lib/cx";
 import { site, whatsappHref } from "@/lib/site";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -71,8 +72,8 @@ function Frame({ children }: { children: React.ReactNode }) {
             <button type="button" className="grid h-10 w-10 place-items-center lg:hidden" aria-label="Open menu" onClick={() => shop.setPanel("menu")}>
               <MenuIcon />
             </button>
-            <Link href="/" className="font-display text-[1.35rem] leading-none font-black tracking-tight text-gold uppercase sm:text-2xl">
-              Savasaachi
+            <Link href="/" className="block overflow-hidden rounded-lg bg-black" aria-label={`${site.name} home`}>
+              <Image src={site.logo} alt={site.name} width={746} height={311} priority className="h-10 w-auto sm:h-12" />
             </Link>
           </div>
           <nav className="hidden items-center justify-center gap-8 text-[13px] font-semibold tracking-[0.12em] uppercase lg:flex">
@@ -104,7 +105,7 @@ function Frame({ children }: { children: React.ReactNode }) {
       <SearchDialog />
       <MenuDrawer />
       <a
-        href={whatsappHref("Hi Savasaachi Flix BD, I want to place an order.")}
+        href={whatsappHref(`Hi ${site.name}, I want to place an order.`)}
         target="_blank"
         rel="noreferrer"
         className="fixed right-4 bottom-4 z-30 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-[#06210f] shadow-lg"
@@ -283,7 +284,9 @@ function Footer() {
     <footer className="mt-16 bg-ink text-white/80">
       <div className="mx-auto grid max-w-[1240px] gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="font-display text-2xl text-white uppercase">Savasaachi <span className="text-sale">Flix BD</span></p>
+          <Link href="/" className="inline-block" aria-label={`${site.name} home`}>
+            <Image src={site.logo} alt={site.name} width={746} height={311} className="h-16 w-auto" />
+          </Link>
           <p className="mt-3 text-sm leading-6">
             A trusted digital subscription shop for Bangladesh — streaming, AI tools, software, and gift cards, paid locally and delivered on WhatsApp.
           </p>
@@ -313,7 +316,7 @@ function Footer() {
       </div>
       <div className="border-t border-white/10">
         <p className="mx-auto max-w-[1240px] px-4 py-5 pr-28 text-xs leading-5 text-white/60 sm:px-6">
-          © {new Date().getFullYear()} {site.legal}. Netflix, Prime Video, Disney+, HBO, Apple, and the other names on this shop are trademarks of their owners. Savasaachi Flix BD is an independent store and is not those companies.
+          Copyright © {new Date().getFullYear()} | {site.legal} | All rights reserved. | Developed by Savasaachi Developers.
         </p>
       </div>
     </footer>

@@ -64,7 +64,7 @@ export const posts: Post[] = [
     title: "How to order a streaming plan on WhatsApp",
     date: "2026-09-18",
     excerpt: "Pick the device type, fill in your details, and send the order on WhatsApp so delivery can start.",
-    author: "Savasaachi Desk",
+    author: "StreamNest Desk",
     minutes: 4,
     body: [
       "A streaming order has three choices that change the price: which apps you want, which screens you will use, and how many days you need. Mobile and laptop plans are cheaper than plans that include a TV.",
@@ -78,10 +78,10 @@ export const posts: Post[] = [
     title: "Netflix prices in Bangladesh: mobile versus TV",
     date: "2026-09-12",
     excerpt: "The mobile plan starts lower. The TV plan costs more because the profile is meant for a television as well.",
-    author: "Savasaachi Desk",
+    author: "StreamNest Desk",
     minutes: 5,
     body: [
-      "On Savasaachi Flix BD the mobile, tablet, laptop, and PC profile starts at Tk 149 for 7 days and Tk 350 for a month. The TV access profile starts at Tk 199 for 7 days and Tk 450 for a month. Three-month options are listed on each product.",
+      "On StreamNest BD the mobile, tablet, laptop, and PC profile starts at Tk 149 for 7 days and Tk 350 for a month. The TV access profile starts at Tk 199 for 7 days and Tk 450 for a month. Three-month options are listed on each product.",
       "Choose TV access if the show will be watched on a television. A mobile plan is the wrong product for a living-room screen, and support cannot turn one into the other after delivery without a new order.",
       "These are profiles arranged by the shop, not gift cards bought from Netflix. Netflix still applies its own household rules to the account behind the profile. The product page says that in the caution note. Ask on WhatsApp if you need to know who controls the login.",
       "Prime Video on this shop starts at Tk 199 for a month, down from Tk 300. A Netflix plus Prime combo is Tk 390 on mobile and laptop, or Tk 490 with TV access.",
@@ -92,7 +92,7 @@ export const posts: Post[] = [
     title: "Gift card, license key, or profile: what is the difference?",
     date: "2026-09-04",
     excerpt: "The label on the option is the whole product. A code for your own account is not the same thing as a shared profile.",
-    author: "Savasaachi Desk",
+    author: "StreamNest Desk",
     minutes: 4,
     body: [
       "An Apple, PlayStation, or Steam listing is a code. You redeem it on an account you already own. Region matters: a US Apple code does not redeem on every Apple Account. After the code is shown, it cannot be pulled back.",
@@ -106,13 +106,13 @@ export const posts: Post[] = [
     title: "Ordering ChatGPT, Claude, Gemini, and other AI plans",
     date: "2026-08-22",
     excerpt: "AI plans use the same cart as streaming. Check whether the option is a personal account or a shared seat.",
-    author: "Savasaachi Desk",
+    author: "StreamNest Desk",
     minutes: 4,
     body: [
       "ChatGPT Plus is listed at Tk 400 for a month. Claude Pro is a personal-account month at Tk 3,300. Gemini Advanced is Tk 899 for a month. Super Grok is Tk 4,000 for a month. QuillBot starts at Tk 300.",
       "The same checkout covers them: cart, coupon, your details, then WhatsApp. A personal-account option needs an email you can log into. Send that email only in the WhatsApp chat after the order exists, not in a public review.",
       "Perplexity and a few other rows are in the catalog but sold out. The product page shows that state, and Add to cart stays off until a variant is available.",
-      "AI access is a subscription to someone else's service. Savasaachi Flix BD is the seller of the plan, not the maker of the model.",
+      "AI access is a subscription to someone else's service. StreamNest BD is the seller of the plan, not the maker of the model.",
     ],
   },
 ];
@@ -214,7 +214,7 @@ export const policies: Policy[] = [
       {
         heading: "The shop",
         paragraphs: [
-          "Savasaachi Flix BD sells digital subscriptions, gift cards, and license keys to customers who pay in Bangladesh. Netflix, Prime Video, Disney+, HBO, Apple, Microsoft, and every other brand named on a product belong to their owners. This shop is not those companies.",
+          "StreamNest BD sells digital subscriptions, gift cards, and license keys to customers who pay in Bangladesh. Netflix, Prime Video, Disney+, HBO, Apple, Microsoft, and every other brand named on a product belong to their owners. This shop is not those companies.",
         ],
       },
       {

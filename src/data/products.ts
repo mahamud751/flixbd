@@ -50,7 +50,7 @@ export const products: Product[] = [
   "rating": 4.8,
   "reviewCount": 591,
   "home": "picks",
-  "caution": "This is profile access arranged by Savasaachi Flix BD. It is not an official Netflix gift card, and Netflix household rules still apply to the underlying account."
+  "caution": "This is profile access arranged by StreamNest BD. It is not an official Netflix gift card, and Netflix household rules still apply to the underlying account."
 },
 {
   "slug": "netflix-tv-subscription-bangladesh",

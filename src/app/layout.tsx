@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_BD",
     type: "website",
+    images: [{ url: site.logo }],
   },
-  icons: { icon: "/icon.svg" },
 };
 
 const jsonLd = {
@@ -41,6 +41,8 @@ const jsonLd = {
   url: site.url,
   email: site.email,
   telephone: `+${site.phoneE164}`,
+  logo: `${site.url}${site.logo}`,
+  sameAs: site.socials.map((social) => social.href),
   address: {
     "@type": "PostalAddress",
     streetAddress: "House 18, Road 11, Banani",

@@ -1,4 +1,4 @@
-# Savasaachi Flix BD
+# StreamNest BD
 
 A Next.js shop for streaming plans, AI tools, gift cards, and software keys in Bangladesh. It follows the catalog and checkout flow of a local OTT store: collections, variants, cart, coupons, bKash / Nagad / Rocket / card, WhatsApp delivery, account, order tracking, guides, and policies.
 
