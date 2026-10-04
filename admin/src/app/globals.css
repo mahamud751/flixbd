@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* StreamNest red, matched to the play-mark logo */
+  --color-brand-300: #ff9aa3;
+  --color-brand-400: #ff5466;
+  --color-brand-500: #f21b30;
+  --color-brand-600: #d00f23;
+  --color-brand-700: #a50b1b;
+
+  --color-ink-950: #07080c;
+  --color-ink-900: #0d0f15;
+  --color-ink-850: #12141c;
+  --color-ink-800: #191c26;
+}
+
+body {
+  background:
+    radial-gradient(60rem 40rem at 110% -10%, rgb(242 27 48 / 0.08), transparent 60%),
+    radial-gradient(50rem 30rem at -20% 110%, rgb(99 102 241 / 0.06), transparent 60%),
+    var(--color-ink-950);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgb(242 27 48 / 0.35);
+}
+
+/* Thin, quiet scrollbars for long tables */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(148 163 184 / 0.25) transparent;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-rise {
+  animation: rise 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise {
+    animation: none;
+  }
+}

@@ -1,0 +1,95 @@
+// StreamNest BD — packages catalog schema (Prisma ORM v7)
+// Connection URL lives in prisma.config.ts (datasource.url)
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ---------------- Catalog ----------------
+
+model Category {
+  id        String    @id @default(cuid())
+  slug      String    @unique
+  name      String
+  icon      String? // emoji or short label, e.g. 🎬
+  sortOrder Int       @default(0)
+  isActive  Boolean   @default(true)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  products  Product[]
+
+  @@map("categories")
+}
+
+model Product {
+  id       String   @id @default(cuid())
+  slug     String   @unique
+  name     String
+  typeLabel String? // e.g. "Streaming", "AI", "Gift card"
+  blurb    String? // one-line description
+  paragraphs String[] // long description paragraphs
+  features   String[] // bullet points
+  image    String? // image path or URL
+  rating   Float    @default(4.7)
+  reviewCount Int   @default(0)
+  homeSection String? // picks | combos | popular | ai | productivity
+  isFeatured Boolean @default(false)
+  isActive Boolean  @default(true)
+  sortOrder Int     @default(0)
+  caution  String? // warning shown to buyers
+  categoryId String
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  packages Package[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([categoryId])
+  @@index([isActive])
+  @@map("products")
+}
+
+// A purchasable package / plan of a product
+// e.g. "Shared Profile · 1 Month" → 350 BDT
+model Package {
+  id        String   @id @default(cuid())
+  name      String // display label, e.g. "Shared Profile · 1 Month"
+  profileType String? // "Shared Profile" | "Private Profile" | "Personal" | "Individual" | "Lifetime License" ...
+  duration  String? // "1 Month" | "3 Months" | "12 Months" | "7 Days" | "10 Days" ...
+  price     Int // BDT
+  compareAtPrice Int? // strike-through price, BDT
+  stock     Int      @default(100)
+  isAvailable Boolean @default(true)
+  sortOrder Int      @default(0)
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([productId])
+  @@map("packages")
+}
+
+// ---------------- Customers ----------------
+
+// Storefront customer account (email + password login).
+// Admin access is not a row here: it uses the static ADMIN_EMAIL / ADMIN_PASSWORD from .env.
+model User {
+  id           String    @id @default(cuid())
+  name         String
+  email        String    @unique // stored lower-cased
+  phone        String?
+  passwordHash String
+  isActive     Boolean   @default(true)
+  lastLoginAt  DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@map("users")
+}
