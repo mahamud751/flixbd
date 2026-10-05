@@ -109,7 +109,7 @@ const catalog: SeedCategory[] = [
         blurb:
           "Prime Video for shows and movies, with shared and private profile plans.",
         image: "/shop/amazon-prime-video-subscription-bangladesh.jpg",
-        homeSection: "popular",
+        homeSection: "combos",
         rating: 4.6,
         reviewCount: 587,
         packages: [
@@ -130,7 +130,7 @@ const catalog: SeedCategory[] = [
         blurb:
           "Disney+ for films, series, and family titles, with or without VPN options.",
         image: "/shop/buy-disneyplus-premium-subscription-in-bangladesh.png",
-        homeSection: "popular",
+        homeSection: "picks",
         rating: 4.7,
         reviewCount: 799,
         packages: [
@@ -151,7 +151,7 @@ const catalog: SeedCategory[] = [
         blurb:
           "HBO Max originals, films, and series with shared and private profile plans.",
         image: "/shop/hbo-max-subscriptions-price-bangladesh.jpg",
-        homeSection: "popular",
+        homeSection: "picks",
         rating: 4.9,
         reviewCount: 768,
         packages: [
@@ -169,6 +169,7 @@ const catalog: SeedCategory[] = [
         slug: "crunchyroll-premium",
         name: "Crunchyroll Premium",
         typeLabel: "Anime",
+        homeSection: "combos",
         blurb:
           "Ad-free anime, simulcasts, and the back catalog on Crunchyroll.",
         rating: 4.7,
@@ -188,6 +189,7 @@ const catalog: SeedCategory[] = [
         slug: "hulu",
         name: "Hulu Subscription",
         typeLabel: "Streaming",
+        homeSection: "picks",
         blurb:
           "Hulu access for 1 or 3 months. A VPN is required outside Hulu's regions.",
         image: "/shop/hulu-subscription-price-bangladesh.jpg",
@@ -235,7 +237,7 @@ const catalog: SeedCategory[] = [
         typeLabel: "Music",
         blurb: "Spotify Premium individual plan with ad-free listening.",
         image: "/shop/spotify-premium-subscription.jpg",
-        homeSection: "popular",
+        homeSection: "combos",
         rating: 4.6,
         reviewCount: 825,
         packages: [
@@ -249,6 +251,7 @@ const catalog: SeedCategory[] = [
         slug: "apple-music",
         name: "Apple Music",
         typeLabel: "Music",
+        homeSection: "combos",
         blurb: "Apple Music individual plan for your Apple Account.",
         image: "/shop/apple-music-premium.png",
         rating: 4.6,
@@ -512,6 +515,7 @@ const catalog: SeedCategory[] = [
         slug: "steam-wallet-gift-card",
         name: "Steam Wallet Gift Card",
         typeLabel: "Gift card",
+        homeSection: "popular",
         blurb: "Steam Wallet codes redeemed on your own Steam account.",
         image: "/shop/steam-wallet-giftcard.png",
         rating: 4.7,
@@ -611,6 +615,7 @@ const catalog: SeedCategory[] = [
         slug: "surfshark-vpn",
         name: "Surfshark VPN",
         typeLabel: "VPN",
+        homeSection: "popular",
         blurb: "Surfshark VPN with unlimited devices.",
         image: "/shop/surfshark-vpn-bangladesh.jpg",
         rating: 4.6,
@@ -636,6 +641,7 @@ const catalog: SeedCategory[] = [
         slug: "expressvpn",
         name: "ExpressVPN",
         typeLabel: "VPN",
+        homeSection: "popular",
         blurb: "ExpressVPN for phone, PC, and Mac.",
         image: "/shop/express-vpn-subscription-bangladesh.jpg",
         rating: 4.9,
