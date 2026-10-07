@@ -65,6 +65,10 @@ const P = (
     ([profileType, duration].filter(Boolean).join(" · ") || undefined),
 });
 
+/** Gift-card face value. The product name carries the region. */
+const D = (name: string, price: number): SeedPackage =>
+  P(undefined, undefined, price, { name });
+
 // ----------------------------------------------------------------- data ----
 
 const SHARED = "Shared Profile";
@@ -109,7 +113,6 @@ const catalog: SeedCategory[] = [
         blurb:
           "Prime Video for shows and movies, with shared and private profile plans.",
         image: "/shop/amazon-prime-video-subscription-bangladesh.jpg",
-        homeSection: "combos",
         rating: 4.6,
         reviewCount: 587,
         packages: [
@@ -169,7 +172,6 @@ const catalog: SeedCategory[] = [
         slug: "crunchyroll-premium",
         name: "Crunchyroll Premium",
         typeLabel: "Anime",
-        homeSection: "combos",
         blurb:
           "Ad-free anime, simulcasts, and the back catalog on Crunchyroll.",
         rating: 4.7,
@@ -229,7 +231,7 @@ const catalog: SeedCategory[] = [
     slug: "music",
     name: "Music Streaming",
     icon: "🎵",
-    sortOrder: 2,
+    sortOrder: 3,
     products: [
       {
         slug: "spotify-premium",
@@ -237,7 +239,6 @@ const catalog: SeedCategory[] = [
         typeLabel: "Music",
         blurb: "Spotify Premium individual plan with ad-free listening.",
         image: "/shop/spotify-premium-subscription.jpg",
-        homeSection: "combos",
         rating: 4.6,
         reviewCount: 825,
         packages: [
@@ -251,7 +252,6 @@ const catalog: SeedCategory[] = [
         slug: "apple-music",
         name: "Apple Music",
         typeLabel: "Music",
-        homeSection: "combos",
         blurb: "Apple Music individual plan for your Apple Account.",
         image: "/shop/apple-music-premium.png",
         rating: 4.6,
@@ -292,7 +292,7 @@ const catalog: SeedCategory[] = [
     slug: "ai",
     name: "AI & Productivity",
     icon: "🤖",
-    sortOrder: 3,
+    sortOrder: 4,
     products: [
       {
         slug: "chatgpt-plus",
@@ -492,7 +492,7 @@ const catalog: SeedCategory[] = [
     slug: "gaming",
     name: "Gaming Services",
     icon: "🎮",
-    sortOrder: 4,
+    sortOrder: 5,
     products: [
       {
         slug: "pubg-mobile-uc",
@@ -512,22 +512,55 @@ const catalog: SeedCategory[] = [
         packages: [],
       },
       {
-        slug: "steam-wallet-gift-card",
-        name: "Steam Wallet Gift Card",
+        slug: "steam-wallet-usa",
+        name: "Steam Wallet (USA)",
         typeLabel: "Gift card",
         homeSection: "popular",
-        blurb: "Steam Wallet codes redeemed on your own Steam account.",
+        blurb: "USA Steam Wallet codes redeemed on a US Steam account.",
         image: "/shop/steam-wallet-giftcard.png",
         rating: 4.7,
         reviewCount: 842,
         caution:
-          "Wallet region must match your Steam account. A revealed code cannot be returned.",
+          "This code is for a USA Steam account. A revealed code cannot be returned.",
         packages: [
-          P(undefined, undefined, 1600, { name: "$10" }),
-          P(undefined, undefined, 3050, { name: "$20" }),
-          P(undefined, undefined, 3750, { name: "$25" }),
-          P(undefined, undefined, 7350, { name: "$50" }),
-          P(undefined, undefined, 14200, { name: "$100" }),
+          D("5 USD", 949),
+          D("10 USD", 1849),
+          D("20 USD", 3649),
+          D("25 USD", 4599),
+          D("30 USD", 5299),
+          D("50 USD", 8699),
+          D("100 USD", 17199),
+        ],
+      },
+      {
+        slug: "steam-wallet-europe",
+        name: "Steam Wallet (Europe)",
+        typeLabel: "Gift card",
+        blurb: "EUR Steam Wallet codes for a European Steam account.",
+        image: "/shop/steam-wallet-giftcard.png",
+        caution:
+          "This code is for a European Steam account. A revealed code cannot be returned.",
+        packages: [
+          D("5 EUR", 1099),
+          D("10 EUR", 2099),
+          D("20 EUR", 4099),
+          D("30 EUR", 6099),
+        ],
+      },
+      {
+        slug: "steam-wallet-india",
+        name: "Steam Wallet (India)",
+        typeLabel: "Gift card",
+        blurb: "INR Steam Wallet codes for an Indian Steam account.",
+        image: "/shop/steam-wallet-giftcard.png",
+        caution:
+          "This code is for an India Steam account. A revealed code cannot be returned.",
+        packages: [
+          D("₹130", 249),
+          D("₹250", 469),
+          D("₹500", 929),
+          D("₹1000", 1799),
+          D("₹2500", 4499),
         ],
       },
       {
@@ -538,50 +571,175 @@ const catalog: SeedCategory[] = [
         packages: [],
       },
       {
-        slug: "xbox-gift-card",
-        name: "Xbox Gift Card",
+        slug: "xbox-gift-card-usa",
+        name: "Xbox Gift Card (USA)",
         typeLabel: "Gift card",
-        blurb: "Xbox and Microsoft Store credit.",
-        packages: [],
+        blurb: "USA Xbox and Microsoft Store credit.",
+        caution:
+          "Redeem on a USA Microsoft account. A revealed code cannot be returned.",
+        packages: [
+          D("5 USD", 849),
+          D("10 USD", 1649),
+          D("15 USD", 2399),
+          D("20 USD", 3199),
+          D("25 USD", 3949),
+          D("50 USD", 7799),
+          D("100 USD", 15299),
+        ],
       },
       {
-        slug: "playstation-gift-card",
-        name: "PlayStation Gift Card",
+        slug: "ea-gift-card-usa",
+        name: "EA Gift Card (USA)",
         typeLabel: "Gift card",
-        blurb: "PSN wallet codes for the PlayStation Store.",
+        blurb: "USA EA credit for the EA app.",
+        caution:
+          "Redeem on a USA EA account. A revealed code cannot be returned.",
+        packages: [D("15 USD", 2349), D("25 USD", 3899)],
+      },
+      {
+        slug: "playstation-gift-card-usa",
+        name: "PlayStation Gift Card (USA)",
+        typeLabel: "Gift card",
+        blurb: "USA PSN wallet codes for the PlayStation Store.",
         image: "/shop/playstation-psn-gift-cards.png",
         rating: 4.9,
         reviewCount: 451,
         caution:
-          "Match the code region to your PlayStation account. A revealed code cannot be returned.",
+          "Redeem on a USA PlayStation account. A revealed code cannot be returned.",
         packages: [
-          P(undefined, undefined, 3500, { name: "$25" }),
-          P(undefined, undefined, 6980, { name: "$50" }),
-          P(undefined, undefined, 13800, { name: "$100" }),
+          D("2 USD", 499),
+          D("3 USD", 699),
+          D("4 USD", 899),
+          D("10 USD", 1649),
+          D("25 USD", 3899),
+          D("50 USD", 7749),
+          D("75 USD", 11499),
+          D("100 USD", 15299),
+          D("150 USD", 23299),
+          D("200 USD", 30999),
+          D("250 USD", 38699),
+        ],
+      },
+      {
+        slug: "playstation-gift-card-uk",
+        name: "PlayStation Gift Card (UK)",
+        typeLabel: "Gift card",
+        blurb: "UK PSN wallet codes for the PlayStation Store.",
+        image: "/shop/playstation-psn-gift-cards.png",
+        caution:
+          "Redeem on a UK PlayStation account. A revealed code cannot be returned.",
+        packages: [
+          D("10 GBP", 2199),
+          D("20 GBP", 4299),
+          D("40 GBP", 8499),
+          D("50 GBP", 10699),
+          D("100 GBP", 21299),
         ],
       },
       {
         slug: "apple-gift-card",
-        name: "Apple Gift Card (iTunes)",
+        name: "Apple Gift Card (USA)",
         typeLabel: "Gift card",
-        blurb: "Apple Gift Card amounts redeemed on an Apple Account you own.",
+        blurb: "USA Apple Gift Card amounts for an Apple Account you own.",
         image: "/shop/apple-itunes-giftcard-price-in-bangladesh.png",
         isFeatured: true,
         rating: 4.8,
         reviewCount: 468,
         caution:
-          "Redeem codes only on an Apple Account you own. A revealed code cannot be returned.",
+          "Redeem on a USA Apple Account you own. A revealed code cannot be returned.",
         packages: [
-          P(undefined, undefined, 340, { name: "$2" }),
-          P(undefined, undefined, 780, { name: "$5" }),
-          P(undefined, undefined, 1500, { name: "$10" }),
-          P(undefined, undefined, 2235, { name: "$15" }),
-          P(undefined, undefined, 2980, { name: "$20" }),
-          P(undefined, undefined, 3680, { name: "$25" }),
-          P(undefined, undefined, 4400, { name: "$30" }),
-          P(undefined, undefined, 7250, { name: "$50" }),
-          P(undefined, undefined, 14300, { name: "$100" }),
-          P(undefined, undefined, 28000, { name: "$200" }),
+          D("2 USD", 349),
+          D("3 USD", 499),
+          D("4 USD", 679),
+          D("5 USD", 849),
+          D("10 USD", 1649),
+          D("15 USD", 2449),
+          D("20 USD", 3249),
+          D("25 USD", 4049),
+          D("30 USD", 4849),
+          D("40 USD", 6449),
+          D("50 USD", 7999),
+          D("60 USD", 9599),
+          D("100 USD", 15999),
+        ],
+      },
+      {
+        slug: "apple-gift-card-australia",
+        name: "Apple Gift Card (Australia)",
+        typeLabel: "Gift card",
+        blurb: "Australia Apple Gift Card amounts.",
+        image: "/shop/apple-itunes-giftcard-price-in-bangladesh.png",
+        caution:
+          "Redeem on an Australia Apple Account. A revealed code cannot be returned.",
+        packages: [
+          D("2 AUD", 279),
+          D("3 AUD", 399),
+          D("4 AUD", 529),
+          D("5 AUD", 649),
+          D("10 AUD", 1299),
+          D("15 AUD", 1899),
+          D("20 AUD", 2549),
+          D("25 AUD", 3149),
+          D("30 AUD", 3699),
+          D("50 AUD", 6099),
+          D("100 AUD", 11999),
+        ],
+      },
+      {
+        slug: "apple-gift-card-canada",
+        name: "Apple Gift Card (Canada)",
+        typeLabel: "Gift card",
+        blurb: "Canada Apple Gift Card amounts.",
+        image: "/shop/apple-itunes-giftcard-price-in-bangladesh.png",
+        caution:
+          "Redeem on a Canada Apple Account. A revealed code cannot be returned.",
+        packages: [
+          D("5 CAD", 629),
+          D("10 CAD", 1229),
+          D("15 CAD", 1829),
+          D("25 CAD", 2999),
+          D("50 CAD", 5899),
+          D("100 CAD", 11699),
+          D("200 CAD", 23299),
+          D("300 CAD", 35499),
+        ],
+      },
+      {
+        slug: "apple-gift-card-uae",
+        name: "Apple Gift Card (UAE)",
+        typeLabel: "Gift card",
+        blurb: "UAE Apple Gift Card amounts.",
+        image: "/shop/apple-itunes-giftcard-price-in-bangladesh.png",
+        caution:
+          "Redeem on a UAE Apple Account. A revealed code cannot be returned.",
+        packages: [
+          D("50 AED", 2299),
+          D("100 AED", 4549),
+          D("250 AED", 11199),
+          D("300 AED", 13599),
+          D("350 AED", 15799),
+          D("400 AED", 17999),
+          D("450 AED", 20199),
+          D("500 AED", 22399),
+          D("550 AED", 24299),
+          D("600 AED", 26999),
+        ],
+      },
+      {
+        slug: "apple-gift-card-uk",
+        name: "Apple Gift Card (UK)",
+        typeLabel: "Gift card",
+        blurb: "UK Apple Gift Card amounts.",
+        image: "/shop/apple-itunes-giftcard-price-in-bangladesh.png",
+        caution:
+          "Redeem on a UK Apple Account. A revealed code cannot be returned.",
+        packages: [
+          D("5 GBP", 1199),
+          D("10 GBP", 2299),
+          D("15 GBP", 3399),
+          D("20 GBP", 4499),
+          D("25 GBP", 5599),
+          D("50 GBP", 11299),
         ],
       },
       {
@@ -591,13 +749,158 @@ const catalog: SeedCategory[] = [
         blurb: "Discord Nitro with boosted perks.",
         packages: [P(undefined, "3 Months", 699)],
       },
+      {
+        slug: "xbox-game-pass-usa",
+        name: "Xbox Game Pass (USA)",
+        typeLabel: "Gaming",
+        blurb: "USA Xbox Game Pass and EA Access plans.",
+        caution: "These are USA Xbox Game Pass plans.",
+        packages: [
+          P("Essential", "1 Month", 1599),
+          P("Premium", "1 Month", 2349),
+          P("Ultimate", "1 Month", 3599),
+          P("Essential", "3 Months", 3899),
+          P("Essential", "6 Months", 6199),
+          P("Premium", "3 Months", 6899),
+          P("Ultimate", "3 Months", 10699),
+          P("EA Access", "12 Months", 4499),
+        ],
+      },
+      {
+        slug: "red-dead-redemption-2",
+        name: "Red Dead Redemption 2",
+        typeLabel: "Game",
+        blurb: "Red Dead Redemption 2 for Rockstar Launcher, Global.",
+        packages: [
+          P("Standard Edition", undefined, 2449),
+          P("Ultimate Edition", undefined, 3499),
+        ],
+      },
+      {
+        slug: "ea-sports-fc-26",
+        name: "EA Sports FC 26",
+        typeLabel: "Game",
+        blurb: "EA Sports FC 26 for the EA app, USA.",
+        packages: [
+          P("Standard Edition", undefined, 5499),
+          P("TOTY Edition", undefined, 5799),
+          P("Ultimate Edition", undefined, 12499),
+        ],
+      },
+      {
+        slug: "forza-horizon-6",
+        name: "Forza Horizon 6",
+        typeLabel: "Game",
+        blurb: "Forza Horizon 6, Global.",
+        packages: [
+          P("Standard Edition", undefined, 9299),
+          P("Deluxe Edition", undefined, 13299),
+          P("Premium Edition", undefined, 15699),
+        ],
+      },
+      {
+        slug: "minecraft-pc",
+        name: "Minecraft PC",
+        typeLabel: "Game",
+        blurb: "Minecraft PC editions, Global.",
+        packages: [
+          P("Bedrock Edition", undefined, 3099),
+          P("Java & Bedrock Deluxe", undefined, 4299),
+          P("Java Edition", undefined, 4999),
+        ],
+      },
+    ],
+  },
+  {
+    slug: "combos",
+    name: "Combo Offers",
+    icon: "🔥",
+    sortOrder: 2,
+    products: [
+      {
+        slug: "netflix-prime-combo",
+        name: "Netflix + Amazon Prime Video",
+        typeLabel: "Combo",
+        blurb: "Netflix and Prime Video together, billed per month.",
+        image: "/shop/netflix-prime-combo-subscription-bangladesh.png",
+        homeSection: "combos",
+        rating: 4.8,
+        reviewCount: 210,
+        caution:
+          "This is profile access arranged by StreamNest BD, not an official bundle from Netflix or Amazon.",
+        packages: [
+          P(SHARED, "1 Month", 449),
+          P(PRIVATE, "1 Month", 599),
+        ],
+      },
+      {
+        slug: "netflix-hbo-combo",
+        name: "Netflix + HBO Max",
+        typeLabel: "Combo",
+        blurb: "Netflix and HBO Max together, billed per month.",
+        image: "/shop/netflix-hbo-max-combo-subscription-bangladesh.png",
+        homeSection: "combos",
+        caution:
+          "This is profile access arranged by StreamNest BD, not an official bundle.",
+        packages: [
+          P(SHARED, "1 Month", 649),
+          P(PRIVATE, "1 Month", 849),
+        ],
+      },
+      {
+        slug: "netflix-disney-combo",
+        name: "Netflix + Disney+",
+        typeLabel: "Combo",
+        blurb: "Netflix and Disney+ together, billed per month.",
+        image: "/shop/netflix-disneyplus-subscription-bangladesh.png",
+        homeSection: "combos",
+        caution:
+          "This is profile access arranged by StreamNest BD, not an official bundle.",
+        packages: [
+          P(SHARED, "1 Month", 699),
+          P(PRIVATE, "1 Month", 849),
+        ],
+      },
+      {
+        slug: "netflix-prime-disney-combo",
+        name: "Netflix + Amazon Prime Video + Disney+",
+        typeLabel: "Combo",
+        blurb: "Netflix, Prime Video, and Disney+ together, billed per month.",
+        image:
+          "/shop/netflix-prime-disney-plus-combo-subscription-bangladesh.png",
+        homeSection: "combos",
+        caution:
+          "This is profile access arranged by StreamNest BD, not an official bundle.",
+        packages: [
+          P(SHARED, "1 Month", 829),
+          P(PRIVATE, "1 Month", 1049),
+        ],
+      },
+      {
+        slug: "ultimate-entertainment-pack",
+        name: "Ultimate Entertainment Pack",
+        typeLabel: "Combo",
+        blurb: "Netflix, Prime Video, HBO Max, and Disney+ together, billed per month.",
+        image:
+          "/shop/netflix-prime-disney-hbo-max-combo-subscription-bangladesh.png",
+        homeSection: "combos",
+        isFeatured: true,
+        rating: 4.9,
+        reviewCount: 164,
+        caution:
+          "This is profile access arranged by StreamNest BD, not an official bundle. The pack includes Netflix, Amazon Prime Video, HBO Max, and Disney+.",
+        packages: [
+          P(SHARED, "1 Month", 1149),
+          P(PRIVATE, "1 Month", 1499),
+        ],
+      },
     ],
   },
   {
     slug: "vpn",
     name: "VPN & Utilities",
     icon: "🔒",
-    sortOrder: 5,
+    sortOrder: 6,
     products: [
       {
         slug: "proton-vpn",
@@ -714,7 +1017,10 @@ function featuresFor(product: SeedProduct): string[] {
   ] as string[];
   if (profileTypes.length)
     features.push(`${profileTypes.join(" and ")} options`);
-  if (product.packages.length > 1) features.push("Multiple duration options");
+  if (product.packages.length > 1) {
+    const hasDuration = product.packages.some((pkg) => pkg.duration);
+    features.push(hasDuration ? "Multiple duration options" : "Multiple amount options");
+  }
   if (product.packages.length)
     features.push("Delivered on WhatsApp after payment");
   if (!product.packages.length)

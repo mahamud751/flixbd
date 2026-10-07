@@ -11,6 +11,8 @@ export type HomeSection =
 export type Variant = {
   id: string;
   name: string;
+  profileType?: string;
+  duration?: string;
   price: number;
   compareAt?: number;
   stock?: number;

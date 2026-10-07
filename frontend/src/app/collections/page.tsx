@@ -22,11 +22,14 @@ export default async function Page() {
       count: products.length,
       ...copyFor("all", "All products"),
     },
-    ...categories.map((category) => ({
-      handle: category.slug,
-      count: category.productCount,
-      ...copyFor(category.slug, category.name),
-    })),
+    ...categories
+      .map((category) => ({
+        handle: category.slug,
+        count: products.filter((product) => product.category === category.slug)
+          .length,
+        ...copyFor(category.slug, category.name),
+      }))
+      .filter((shelf) => shelf.count > 0),
   ];
 
   return (

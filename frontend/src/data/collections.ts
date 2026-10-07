@@ -18,6 +18,11 @@ export const collectionCopy: Record<string, CollectionCopy> = {
     lede: "Netflix, Prime Video, Disney+, HBO Max, Crunchyroll, Hulu, and more.",
     blurb: "Watch more, paid the Bangladesh way.",
   },
+  combos: {
+    title: "Streaming combos",
+    lede: "Netflix paired with Prime Video, Disney+, and HBO Max. Shared plans start at Tk 449 a month.",
+    blurb: "One monthly price for more than one app.",
+  },
   music: {
     title: "Music subscriptions",
     lede: "Spotify, Apple Music, and YouTube Premium plans.",

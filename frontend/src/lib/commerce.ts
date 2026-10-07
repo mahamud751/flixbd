@@ -215,7 +215,7 @@ export function applyCoupon(
     return { ok: true, code: normalized, amount: 50, label: "Tk 50 off" };
   }
   if (normalized === "COMBO100") {
-    const hasCombo = lines.some((line) => line.product.category === "combo");
+    const hasCombo = lines.some((line) => line.product.category === "combos");
     if (!hasCombo)
       return {
         ok: false,

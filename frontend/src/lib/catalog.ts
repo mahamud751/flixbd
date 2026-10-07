@@ -59,6 +59,8 @@ function toVariant(pkg: ApiPackage): Variant {
   return {
     id: pkg.id,
     name: pkg.name,
+    ...(pkg.profileType ? { profileType: pkg.profileType } : {}),
+    ...(pkg.duration ? { duration: pkg.duration } : {}),
     price: pkg.price,
     ...(pkg.compareAtPrice && pkg.compareAtPrice > pkg.price
       ? { compareAt: pkg.compareAtPrice }
@@ -99,6 +101,13 @@ async function apiGet<T>(path: string): Promise<T> {
   return (await response.json()) as T;
 }
 
+/** A product is on the storefront only when it has a priced, available package. */
+function isListed(product: Product) {
+  return product.variants.some(
+    (variant) => variant.available && variant.price > 0,
+  );
+}
+
 /** Active products with their packages. Optional server-side filters. */
 export async function fetchProducts(
   filters: { search?: string; category?: string; featured?: boolean } = {},
@@ -108,16 +117,18 @@ export async function fetchProducts(
   if (filters.category) params.set("category", filters.category);
   if (filters.featured) params.set("featured", "true");
   const raw = await apiGet<ApiProduct[]>(`/products?${params.toString()}`);
-  return raw.map(toProduct);
+  return raw.map(toProduct).filter(isListed);
 }
 
-/** One active product by slug (or id); null when missing or inactive. */
+/** One active product by slug (or id); null when missing, inactive, or unpriced. */
 export async function fetchProduct(slug: string): Promise<Product | null> {
   try {
     const raw = await apiGet<ApiProduct>(
       `/products/${encodeURIComponent(slug)}`,
     );
-    return raw.isActive ? toProduct(raw) : null;
+    if (!raw.isActive) return null;
+    const product = toProduct(raw);
+    return isListed(product) ? product : null;
   } catch {
     return null;
   }

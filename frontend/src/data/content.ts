@@ -259,7 +259,7 @@ export const heroSlides = [
     kicker: "One checkout, more apps",
     title: "Ultimate streaming combos",
     emphasis: "combos",
-    lede: "Pair Netflix with Prime, Disney+, or HBO Max. Combos start at Tk 390 for mobile and laptop.",
+    lede: "Pair Netflix with Prime, Disney+, or HBO Max. Shared combos start at Tk 449 a month.",
     href: "/collections/combos",
     cta: "Browse combos",
   },

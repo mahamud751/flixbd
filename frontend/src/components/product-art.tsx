@@ -8,6 +8,7 @@ import Image from "next/image";
 const covers: Record<string, string> = {
   streaming: "/covers/streaming.jpg",
   combo: "/covers/combo.jpg",
+  combos: "/covers/combo.jpg",
   ai: "/covers/ai.jpg",
   productivity: "/covers/productivity.jpg",
   "gift-card": "/covers/gift-card.jpg",
